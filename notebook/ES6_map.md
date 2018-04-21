@@ -1,5 +1,21 @@
 # 学习map的笔记
-使用Array.map()可以将数组中的元素复制出来，并且不会对原来的数组产生影响，即进行值复制，而并非引用传递。
+
+## W3CShool的定义：
+> ### Definition and Usage
+
+>The map() method creates a new array with the results of calling a function for every array element.<br>
+>map()方法产生一个新的数组，填充以调用的function对每一个元素执行之后的结果。 <br>
+>The map() method calls the provided function once for each element in an array, in order.<br>
+>对于每一个元素，map()方法按元素在数组中的顺序调用一次function。<br>
+>Note: map() does not execute the function for array elements without values.<br>
+>注意：如果数组中没有值，map()不执行function。<br>
+>Note: map() does not change the original array.<br>
+>注意：map()不改变原始数组。
+
+从定义中我们可以得到如下结论：<br>
+使用Array.map()可以将数组中的元素复制出来，并且不会对原来的数组产生影响，即进行值复制，而并非引用传递。<br>
+下面对元素分别为数字和对象进行实验。
+
 ### 1.当Array中的元素为数字时：
 
 例：
