@@ -21,7 +21,7 @@ console.log("arr1:",arr1,"\n arr2:",arr2);
  </pre></code>
 在上面的实验中，需要注意的是，arr1.map()，在map()中不带参数是不被认识的。必须带上一个函数。每一个在arr1中的元素都会执行一次这个函数。上例中，arr1中的每一个元素在每一次调用map()里面的function的时候，会将对应的value赋给val。
 
-### 2.当Array中的元素为对象时：###
+### 2.当Array中的元素为对象时： ###
 
 例：
 <pre><code>
