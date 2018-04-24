@@ -1,3 +1,4 @@
+问题：
 /**
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
@@ -11,7 +12,7 @@ string convert(string text, int nRows);
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 */
 
-Method 1:
+解决方案 1:
 /**
  * @param {string} s
  * @param {number} numRows
@@ -54,7 +55,7 @@ var convert = function(s, numRows) {
 
 
 
-Method 2:
+解决方案 2:
 /**
  * @param {string} s
  * @param {number} numRows

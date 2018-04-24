@@ -31,3 +31,13 @@ console.log("arr1:",arr1,"\n arr2:",arr2);
 
 // console.log("arr1[2].fun:",arr1[2].fun(2,3),"\n", "arr2[2].fun:",arr2[2].fun(2,3));
 
+var name = "The Window";
+　　var object = {
+　　　　name : "My Object",
+　　　　getNameFunc : function(){ let _this = this;
+　　　　　　return function(){
+　　　　　　　　return _this.name;
+　　　　　　};
+　　　　}
+　　};
+　　console.log(object.getNameFunc()());
