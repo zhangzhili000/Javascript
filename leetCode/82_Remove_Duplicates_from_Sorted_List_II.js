@@ -12,7 +12,7 @@ Output: 2->3
 
 
 
-解决方案：
+解决方案：（打败97.8%）
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
