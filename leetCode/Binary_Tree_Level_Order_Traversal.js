@@ -17,7 +17,7 @@ return its level order traversal as:
 
 
 
-解决方案：
+解决方案一：（打败89.98%）
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -57,6 +57,46 @@ var breadthSearch = function(nodes){
     return [vals].concat(breadthSearch(levelNodes));
 }
 
+
+解决方案二：不独立为函数（打败98.91%）
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */
+var levelOrder = function(root) {
+    if(root === null){
+        return [];
+    }
+
+    let res = [];
+    let nodes = [root];
+    while(nodes.length > 0){
+        let levelNodes = [];
+        let vals = [];
+        while(nodes.length > 0){
+            let node = nodes.shift();
+            vals.push(node.val);
+            if(node.left){
+                levelNodes.push(node.left);    
+            }
+            if(node.right){
+                levelNodes.push(node.right);
+            }
+        
+        }
+        res.push(vals);
+        nodes = levelNodes;
+    }
+    
+    return res;
+}
 
 
 
